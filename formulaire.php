@@ -1,18 +1,3 @@
-<?php
-    include 'include/connexion.php';
-    include 'include/fonctions.php';
-
-    if (!empty($_POST["nom"])) {
-
-    
-        $nom = $_POST["nom"];
-        $type = $_POST["type"];
-        $taille = $_POST["taille"];
-        $prix = $_POST["prix"];
-
-        ajout_jean($conn,$nom,$type,$taille,$prix);
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +22,24 @@
             </div>
             <input type="submit" value="Ajouter" class="button"> <br>
         </form>
+
+        <?php
+            include ("include/connexion.php");
+            include ("include/fonctions.php");
+
+            if (!empty($_POST["nom"])) {
+
+                $nom = $_POST["nom"];
+                $type = $_POST["type"];
+                $taille = $_POST["taille"];
+                $prix = $_POST["prix"];
+
+                console.log($nom);
+
+                ajout_jean($conn,$nom,$type,$taille,$prix);
+            }
+        ?>
+    </div>
 
         
     

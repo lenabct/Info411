@@ -1,7 +1,9 @@
 <?php
 
+    $debeug = false;
+
     function ajout_jean($conn,$nom,$type,$taille,$prix){
-        $sql = "INSERT INTO Vente (`nom`, `type`, 'taille', 'prix') VALUE ('$nom', '$type', $taille, $prix)";
+        $sql = "INSERT INTO `vente` (`nom`, `type`, `taille`, `prix`) VALUES ('$nom', '$type', $taille, $prix);";
         global $debeug;
         if ($debeug)
             echo $sql;
