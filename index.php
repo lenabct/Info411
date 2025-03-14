@@ -9,15 +9,8 @@
 <body>
     <h1>Jean'ted</h1>
 
-    <div class="button-container">
-        <button class="btn" id="ajoutBtn">Ajouter un Jean</button>
-    </div>
+    <a href="formulaire.php" class="lienForm">Ajouter un Jean</a>
 
-    <form id="ajoutForm" class="form" >
-        <h2>Ajouter un Jean</h2>
-        <input type="email" id="loginEmail" placeholder="Adresse e-mail" required />
-        <button type="submit">Ajouter</button>
-    </form>
     
 </body>
 </html>
