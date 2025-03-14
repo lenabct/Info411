@@ -1,3 +1,18 @@
+<?php
+    include 'include/connexion.php';
+    include 'include/fonctions.php';
+
+    if (!empty($_POST["nom"])) {
+
+    
+        $nom = $_POST["nom"];
+        $type = $_POST["type"];
+        $taille = $_POST["taille"];
+        $prix = $_POST["prix"];
+
+        ajout_jean($conn,$nom,$type,$taille,$prix);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +23,22 @@
 </head>
 <body>
 
-    <form id="ajoutForm" class="form" >
-        <h2>Ajouter un Jean</h2>
-        <input type="Nom" id="nomVendeur" placeholder="Nom" required /> <br>
-        <input type="Type" id="typeJean" placeholder="Type du Jean" required /> <br>
-        <input type="Taille" id="tailleJean" placeholder="Taille du Jean" required /> <br>
-        <input type="Prix" id="prixJean" placeholder="Prix du Jean" required /> <br>
-        <button type="submit">Ajouter</button>
-    </form>
+    <h1>Ajouter un Jean</h1>
+
+    <div class="formu">
+        <form methode="POST" action="./formulaire.php">
+            <div class ="row">
+                <div class="element">
+                    <input placeholder="Nom" type="text" name="nom"/> <br>
+                    <input placeholder="Type" type="text" name="type"/> <br>
+                    <input placeholder="Taille" type="int" name="taille"/> <br>
+                    <input placeholder="Prix" type="int" name="prix"/> <br>
+                </div>
+            </div>
+            <input type="submit" value="Ajouter" class="button"> <br>
+        </form>
+
+        
     
 </body>
 </html>
