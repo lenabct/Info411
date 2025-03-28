@@ -11,5 +11,11 @@
         return $res;
     }
 
+    function affiche_jean($conn){
+        $sql = "SELECT * FROM `vente`";
+        $res = mysqli_query($conn,$sql);
+        return $res;
+    }
+
 
 ?>
