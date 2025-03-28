@@ -12,6 +12,7 @@
     <a href="formulaire.php" class="lienForm">Ajouter un Jean</a>
 
     <?php
+        include "include/connexion.php";
         include "include/fonctions.php";
 
         affiche_jean($conn);
