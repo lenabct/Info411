@@ -34,7 +34,7 @@
             $taille = $_POST["taille"];
             $prix = $_POST["prix"];
 
-            console.log($nom);
+            //console.log($nom);
 
             ajout_jean($conn,$nom,$type,$taille,$prix);
         }

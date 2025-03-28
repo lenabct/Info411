@@ -12,7 +12,7 @@
     }
 
     function affiche_jean($conn){
-        $sql = "SELECT * FROM `vente`";
+        $sql = "SELECT * FROM vente";
         global $debeug;
 
         if ($debeug)
