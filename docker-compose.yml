@@ -8,15 +8,15 @@ services :
       - MARIADB_DATABASE=jeanted
     ports : 
       - 3306:3306
-monapache:
-  image: lenabct/monapache
-  ports:
-    - 80:80
-monubuntu:
-  image: lenabct/monubuntu
-phpmyadmin: 
-  image: phpmyadmin
-  environment:
-    - PMA_HOST=mariadb
-  ports:
-    - 8080:80
+  monapache:
+    image: lenabct/monapache
+    ports:
+      - 80:80
+  monubuntu:
+    image: lenabct/monubuntu
+  phpmyadmin: 
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=mariadb
+    ports:
+      - 8080:80
