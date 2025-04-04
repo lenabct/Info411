@@ -2,7 +2,7 @@ services :
   mariadb :
     image : mariadb
     environment :
-      - MARIADB_ROOT_PASSWORD = root
+      - MARIADB_ROOT_PASSWORD = toto
       - MARIADB_USER = oui
       - MARIADB_PASSWORD = oui
       - MARIADB_DATABASE = jeanted
