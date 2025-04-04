@@ -2,7 +2,7 @@ services :
   mariadb :
     image : mariadb
     environment :
-      - MARIADB_ROOT_PASSWORD = toto
+      - MARIADB_ROOT_PASSWORD = root
       - MARIADB_USER = oui
       - MARIADB_PASSWORD = oui
       - MARIADB_DATABASE = jeanted
@@ -13,7 +13,7 @@ monapache:
   ports:
     - 80:80
 monubuntu:
-  image: larochev/monubuntu
+  image: lenabct/monubuntu
 phpmyadmin: 
   image: phpmyadmin
   environment:
