@@ -2,10 +2,10 @@ services :
   mariadb :
     image : mariadb
     environment :
-      - MARIADB_ROOT_PASSWORD = root
-      - MARIADB_USER = oui
-      - MARIADB_PASSWORD = oui
-      - MARIADB_DATABASE = jeanted
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=oui
+      - MARIADB_PASSWORD=oui
+      - MARIADB_DATABASE=jeanted
     ports : 
       - 3306:3306
 monapache:
