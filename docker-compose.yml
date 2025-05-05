@@ -11,7 +11,7 @@ services :
   monapache:
     image: lenabct/monapache
     ports:
-      - 80:80
+      - 8080:80
   monubuntu:
     image: lenabct/monubuntu
   phpmyadmin: 
@@ -19,4 +19,4 @@ services :
     environment:
       - PMA_HOST=mariadb
     ports:
-      - 8080:80
+      - 8081:80
