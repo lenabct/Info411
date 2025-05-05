@@ -6,12 +6,10 @@ services :
       - MARIADB_USER=$(MARIADB_USER)
       - MARIADB_PASSWORD=$(MARIADB_PASSWORD)
       - MARIADB_DATABASE=$(MARIADB_DATABASE)
-    ports : 
-      - 3306:3306
   monapache:
     image: lenabct/monapache
     ports:
-      - 8080:80
+      - 8000:80
   monubuntu:
     image: lenabct/monubuntu
   phpmyadmin: 
@@ -19,4 +17,4 @@ services :
     environment:
       - PMA_HOST=mariadb
     ports:
-      - 8081:80
+      - 8080:80
